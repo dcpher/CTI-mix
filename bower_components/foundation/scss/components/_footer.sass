@@ -2,14 +2,12 @@
 
 #footer
   margin-bottom: 0
-  background-color: $color-dark-grey
+  background-color: $color-dark-green
   border: none
-  border-top: 1px solid rgba($color-dark-grey, 0.09)
+  border-top: 1px solid rgba($color-dark-green, 0.09)
   
   .footer-header
     margin-top: rem-calc(16)
-    padding-bottom: rem-calc(16)
-    border-bottom: 1px solid lighten($color-dark-grey, 10)
     .follow-us-on
       margin-top: rem-calc(10)
       padding-left: rem-calc(8)
@@ -21,13 +19,13 @@
           width: rem-calc(40)
           height: rem-calc(40)
           text-align: center
-          background-color: darken($color-light-grey, 45)
-          color: $color-dark-grey
+          background-color: darken($color-white, 45)
+          color: $color-green
           padding-top: rem-calc(8)
           font-size: rem-calc(24)
           +transition
           &:hover
-            background-color: $color-white
+            background-color: $color-green
 
       @media #{$small-only}
         margin-top: rem-calc(24)
@@ -35,22 +33,49 @@
   .footer-links
     margin-top: rem-calc(32)
     margin-bottom: rem-calc(32)
-    border-bottom: 1px solid lighten($color-dark-grey, 10)
+    border-bottom: 1px solid darken($color-dark-green, 10)
     ul
       li
         font-size: rem-calc(16)
         &.title
-          color: $color-white
+          color: $color-yellow
           font-size: rem-calc(22)
           padding-bottom: rem-calc(8)
         a
-          color: lighten($color-mid-grey, 10)
+          color: lighten($color-white, 15)
+          text-transform: uppercase
+          line-height:  rem-calc(35)
           &:hover
             text-decoration: none
-            color: $color-light-grey
+            color: $color-yellow
 
 
   .legal
     font-size: rem-calc(12)
     font-weight: 500
-    color: darken($color-mid-grey, 10)
+    color: darken($color-dark-green, 10)
+    
+  .recommended h4 
+    color: $color-yellow
+    font-size: rem-calc(22)
+    line-height: rem-calc(40)
+    padding-left: rem-calc(55)
+    background: transparent url(/Media/Default/main/australia_silhouette.png) no-repeat left top
+    
+  .recommended p
+    color: $color-white
+    font-size: rem-calc(16)
+    
+  .recommended .rating .stars
+    float: lef
+    margin-right: rem-calc(16)
+    margin-left: rem-calc(-18)
+
+  .recommended .rating .stars li
+    color: $color-white
+    display: block
+    float: left
+    width: 20px
+    height: 18px
+    margin-right: 4px
+    background: transparent url(/Media/Default/main/star.png) no-repeat left top

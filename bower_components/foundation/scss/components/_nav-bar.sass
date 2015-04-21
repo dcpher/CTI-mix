@@ -1,36 +1,58 @@
 // nav-bar
 
-nav
-  
+.top-bar    
+  background-color: $color-green
+
+  .toggle-topbar a, .toggle-topbar span
+    color: white
+    font-weight: 500
+
+  #by-line
+    color: $color-dark-green
+    display: block
+    letter-spacing: normal
+    margin-left: rem-calc(230)
+    color: #007015
+    font-size: rem-calc(18)
+    font-weight: 500
+
+nav    
   .logo
-    height: 40px
-    width: 154px
+    height: 72px
+    width: 207px
+    float: left
+    margin-top: 0px
+    margin-left: -20px    
+
    
   .top-bar-section
     ul 
       li
         &.sign-in
           a
+            text-transform: uppercase
             font-weight: 500
-            color: $color-blue
+            color: $color-white
+            background-color: $cti-dark-green
             
             // set the sign in hover color to blue
             &:not(.button):hover
               color: $color-white
-              background-color: $color-blue
+              background-color: $cti-dark-green
               
         //transition effect for nav buttons
         a
           +transition
+          text-transform: uppercase
 
         a:hover 
-          background-color: $color-dark-grey 
-          color: $color-white
+          background-color: $color-dark-green
+          color: $color-green
       
         // Menu backgroud colour override
         @media #{$small-only}
-          background-color: $color-dark-grey
-          border-bottom: 1px solid darken($color-dark-grey, 5)
+          background-color: $color-dark-green
+          border-bottom: 1px solid darken($color-green, 5)
           a
             color: $color-white
 
